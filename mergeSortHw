@@ -1,0 +1,41 @@
+//1.
+const numbers = [2, 4, 6, 8];
+
+let doubleNumbers = numbers.map((number) => {
+    return number*2;
+});
+console.log(doubleNumbers);
+
+const names = ['Alice', 'Bob', 'Charlie'];
+
+//2.
+let greetingsMessage = names.map((name) => {
+  return 'Hello, ' + name + '!'
+});
+console.log(greetingsMessage);
+
+//3.
+
+const people = [
+  {firstName: 'John', lastName: 'Doe'},
+  {firstName: 'Anna', lastName: 'Smith'},
+  {firstName: 'Peter', lastName:'Jones'}
+];
+
+let firstNameOnly = people.map(person => {
+  const {lastName, ...firstName} = person;
+  return firstName;
+});
+
+console.log(firstNameOnly);
+
+//why wont it push!!!!
+
+//4.
+const words = ['apple', 'banana', 'cherry'];
+
+let fruitsLetterNumbers = words.map(fruit => {
+  return fruit.length;
+});
+
+console.log(fruitsLetterNumbers);
